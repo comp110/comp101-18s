@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./lib/",
+        "outDir": "./test/",
         "rootDir": "./src/",
         "lib": ["es2015", "dom"],
         "sourceMap": true,
@@ -19,9 +19,5 @@
     },
     "exclude": [
         "node_modules",
-        "build",
-        "lib",
-        "test",
-        "public"
     ]
 }
