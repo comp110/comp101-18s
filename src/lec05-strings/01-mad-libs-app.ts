@@ -39,3 +39,4 @@ export let main = async () => {
     print(finalMadLib);
 
 };
+main();
