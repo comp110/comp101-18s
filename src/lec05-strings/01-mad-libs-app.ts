@@ -1,21 +1,21 @@
-import { print, promptString } from "introcs";
+import { print, promptString, promptNumber } from "introcs";
 
 export let main = async () => {
     
     // Part 1:
 
-    // TODO: Prompt the user for a positive and negative adjective
+    // Prompt the user for a positive and negative adjective
 
-    let positiveAdj: string = "";
-    let negativeAdj: string = "";
+    let positiveAdj: string = await promptString("Enter a positive adjective");
+    let negativeAdj: string = await promptString("Enter a negative adjective");
 
     // TODO: Prompt the user for a verb
 
     let verb: string = "";
     
-    // TODO: Prompt the user for a large and small number
+    // TODO: Prompt the user for a small number
 
-    let uncScore: number = 0;
+    let uncScore: number = await promptNumber("Enter a large number");
     let dookScore: number = 0;
     
     // TODO: Compute the difference between the two scores in a number variable called winBy
@@ -30,12 +30,12 @@ export let main = async () => {
     let madLib2: string = "";
     let madLib3: string = "";
 
-    // Concatenate the individual parts into finalMadLib
+    // TODO: Concatenate the individual parts into finalMadLib
 
     let finalMadLib: string = "";
 
     // Print the finalMadLib
     
-    
+    print(finalMadLib);
 
 };
