@@ -13,3 +13,4 @@ export let main = async () => {
     print(":)");
 
 };
+main();
