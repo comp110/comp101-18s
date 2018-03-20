@@ -1,0 +1,2 @@
+export let uncPlayers = [ "Luke Maye", "Kane Ma", "Cameron Johnson", "Kenny Williams", "Aaron Rohlman", "Theo Pinson", "Sterling Manley", "Garrison Brooks", "Jalek Felton", "Andrew Platek", "Brandon Robinson", "Joel Berry II", "Brandon Huffman", "Seventh Woods", "Shea Rush", "Walker Miller"];
+export let uncPlayerPointsPerGame = [16.9, 0.2, 12.4, 11.4, 0.3, 10.3, 5.4, 4.5, 2.9, 2.0, 1.7, 1.6, 17.1, 1.1, 0.4, 0.3];
