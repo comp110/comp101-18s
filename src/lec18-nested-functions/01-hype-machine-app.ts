@@ -1,4 +1,4 @@
-import { print, promptString, random } from "introcs";
+import { print, promptString } from "introcs";
 
 // TODO: define the hypeUp function here
 
