@@ -10,42 +10,30 @@ class Pet {
     url: string = "";
 }
 
-
 let main = async () => {
-    let pets: Pet[] = await csvToArray("Pets", Pet);
-    let filtered: Pet[] = filterLessThan20Miles(filterByHouseTrained(pets));
-    let swipedRight: Pet[] = [];
-    for (let i: number = 0; i < filtered.length; i++) {
-        image(filtered[i].url);
-        let choice: string = await promptString("left or right");
-        if (choice === "right") {
-            swipedRight[swipedRight.length] = filtered[i];
-        }
-    }
-    let status: string = printMatches(swipedRight);
-    print(status);
+    // TODO: Part 0 - Read in the pet data
+
+    // TODO: Part 2 - Swipe loop
+
 };
 
-let filterByHouseTrained = (pets: Pet[]): Pet[] => {
-    return pets.filter((pet) => pet.houseTrained);
-};
-
+// TODO: Part 1.1 - Filter pets who are closer than 20 miles away
 let filterLessThan20Miles = (pets: Pet[]): Pet[] => {
     let lessThan20Miles: Pet[] = [];
-    for (let i: number = 0; i < pets.length; i++) {
-        if (pets[i].distance < 20) {
-            lessThan20Miles[lessThan20Miles.length] = pets[i];
-        }
-    }
+
     return lessThan20Miles;    
 };
 
+// TODO: Part 1.2 - Filter pets who are house trained
+let filterByHouseTrained = (pets: Pet[]): Pet[] => {
+    let areHouseTrained: Pet[] = [];
+
+    return areHouseTrained;
+};
+
+// TODO: Part 3 - Print matches
 let printMatches = (pets: Pet[]): string => {
-    for (let i: number = 0; i < pets.length; i++) {
-        print(pets[i].name + " is " + pets[i].distance + " miles away");
-        image(pets[i].url);
-    }
-    return pets.length > 0 ? "success" : "failure :(";
+    return "";
 };
 
 main();
